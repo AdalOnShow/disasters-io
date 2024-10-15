@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Components
-import Header from "./components/comon/Header.jsx";
+import Header from "./components/common/Header.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import Incidents from "./components/Incidents.jsx";
 import NotFound from "./components/NotFound.jsx";
