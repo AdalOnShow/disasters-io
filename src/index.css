@@ -4,14 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: 'Onest', sans-serif;
+}
+
 .h1 {
-    @apply font-onest font-bold text-[20px] md:text-[26px] md:leading-[34px] text-black;
+    @apply font-bold text-[20px] md:text-[26px] md:leading-[34px] text-black;
 }
 
 .h4 {
-    @apply font-onest font-bold text-[16px] md:text-[20px] leading-[30px] text-black;
+    @apply font-bold text-[16px] md:text-[20px] leading-[30px] text-black;
 }
 
 .p {
-    @apply font-onest text-[14px] leading-[30px] text-body;
+    @apply text-[14px] leading-[30px] text-body;
+}
+
+.nav-active {
+    @apply font-bold text-[14px] text-black border-b-[3px] border-black pt-8 pb-7;
+}
+
+.not-active {
+    @apply text-[#A1A1AA] pt-8 pb-7 font-normal text-[14px] hover:text-black;
 }
