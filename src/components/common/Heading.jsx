@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 const Heading = ({ children, upTitle, title }) => {
     return (
-        <section className="bg-secondary/50 py-6 md:py-10 px-2">
+        <section className="bg-secondary/50 py-6 md:py-8 px-2">
             <div className="container mx-auto max-w-[1268px]">
                 <div className="flex-row md:flex justify-between items-center">
                     <div className="text-center md:text-left">

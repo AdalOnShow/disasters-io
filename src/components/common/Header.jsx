@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import Nav from "./Nav.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav.jsx";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
+
+    useEffect(() => {
+        const bodyClass = document.body.classList;
+        isOpen ? bodyClass.add("no-scroll") : bodyClass.remove("no-scroll");
+        return () => bodyClass.remove("no-scroll");
+    }, [isOpen]);
 
     const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen)
     return (

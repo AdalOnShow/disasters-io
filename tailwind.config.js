@@ -26,6 +26,9 @@ export default {
       fontFamily: {
         onest: ['"Onest", sans-serif'],
       },
+      screens: {
+        'xl': '1248px',
+      }
     },
   },
   plugins: [],

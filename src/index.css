@@ -8,14 +8,6 @@
     font-family: 'Onest', sans-serif;
 }
 
-.h1 {
-    @apply font-bold text-[20px] md:text-[26px] md:leading-[34px] text-black;
-}
-
-.h4 {
-    @apply font-bold text-[16px] md:text-[20px] leading-[30px] text-black;
-}
-
-.p {
-    @apply text-[14px] leading-[30px] text-body;
+.no-scroll {
+    overflow: hidden;
 }
