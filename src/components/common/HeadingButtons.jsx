@@ -4,7 +4,7 @@ import { Button1, Button2 } from "./Buttons.jsx";
 const HeadingButtons = ({ isButtonIcon, buttonTitle }) => {
     return (
         <div className="flex items-center justify-center gap-2">
-            <div className="relative rounded-[6px] bg-[#FAFAFA] z-20">
+            <div className="relative rounded-[6px] bg-[#FAFAFA]">
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                     <img src={"../src/assets/search.svg"} alt="search" width={18} height={18} />
                 </div>

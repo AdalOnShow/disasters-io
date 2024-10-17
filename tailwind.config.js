@@ -27,7 +27,7 @@ export default {
         onest: ['"Onest", sans-serif'],
       },
       screens: {
-        'xl': '1248px',
+        'xl': '1272px',
       }
     },
   },
