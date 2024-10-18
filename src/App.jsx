@@ -6,7 +6,7 @@ import Dashboard from "./components/Dashboard.jsx";
 import Incidents from "./components/incidents/Incidents.jsx";
 import NotFound from "./components/NotFound.jsx";
 import NewIncident from "./components/incidents/NewIncident.jsx";
-import Step1 from "./components/incidents/step-1.jsx";
+import Step1 from "./components/incidents/Step-1.jsx";
 import Step2 from "./components/incidents/Step-2.jsx";
 import Step3 from "./components/incidents/Step-3.jsx";
 import Locations from "./components/Locations.jsx";
