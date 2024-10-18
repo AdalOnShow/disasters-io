@@ -63,3 +63,21 @@ export const cards = [
         price: "$1,456,654.00"
     },
 ]
+
+export const incidentsStarted = [
+    {
+        img: "../src/assets/incidents/type.png",
+        title: "What type of incident?",
+        des: "Choose the category that best describes the incident.",
+    },
+    {
+        img: "../src/assets/incidents/about.png",
+        title: "Tell us about the incident?",
+        des: "Let’s connect the dots and see where to start.",
+    },
+    {
+        img: "../src/assets/incidents/location.png",
+        title: "Where did the incident occur?",
+        des: "Lorem ipsum dolar sit general sac mascho werho",
+    },
+]

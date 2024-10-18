@@ -1,7 +1,7 @@
-import { Button1, Button2 } from "./Buttons.jsx";
+import { Button2 } from "./Buttons.jsx";
 
 // eslint-disable-next-line react/prop-types
-const HeadingButtons = ({ isButtonIcon, buttonTitle }) => {
+const HeadingButtons = ({ children }) => {
     return (
         <div className="flex items-center justify-center gap-2">
             <div className="relative rounded-[6px] bg-[#FAFAFA]">
@@ -15,7 +15,7 @@ const HeadingButtons = ({ isButtonIcon, buttonTitle }) => {
                 />
             </div>
             <Button2>Sort By: Date modified</Button2>
-            <Button1 icon={isButtonIcon}>{buttonTitle}</Button1>
+            {children}
         </div>
     )
 }
