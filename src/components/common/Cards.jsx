@@ -6,13 +6,13 @@ const Cards = () => {
             <div className="flex flex-wrap justify-center xl:justify-start items-center gap-8 md:gap-4 ">
                 {
                     cards.map(({ image, title, des, price }, i) => (
-                        <div key={i} className="max-w-[306px]">
+                        <div key={i} className="max-w-[306px] hover:scale-105 transition-all">
                             <div className="max-h-[253px] relative">
                                 <img src={image} alt="card image"
                                     className="w-full h-full object-cover" />
                                 <div
                                     className="absolute top-3 right-3 flex items-center justify-center gap-2 font-bold text-xs text-[#18181B] bg-white p-2.5 rounded-[40px]">
-                                    <img src={"../src/assets/dashboard/rain.png"} alt="" />
+                                    <img src={"/assets/dashboard/rain.png"} alt="" />
                                     Blizzard
                                 </div>
                             </div>

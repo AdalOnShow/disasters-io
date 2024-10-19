@@ -11,7 +11,7 @@ const Step3 = () => {
                 <div>
                     <h1 className="font-bold text-xl md:text-2xl text-black pb-3">Where’s the incident?</h1>
                     <p className="text-xs md:text-sm leading-[22px] text-body pb-6 max-w-[580px]">Enter a GPS, address. or pin point on the map. Try to be as accurate as possible, or click:Jurisdiction Wide</p>
-                    <img src={"../../src/assets/incidents/map.png"} alt="" />
+                    <img src={"/assets/incidents/map.png"} alt="" />
                 </div>
             </div>
         </section>

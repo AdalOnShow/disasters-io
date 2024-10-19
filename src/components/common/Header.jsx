@@ -18,15 +18,15 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center max-w-[1268px]">
                 <div className="">
                     <Link to={"/"}>
-                        <img src={"../../src/assets/nav/logo.png"} alt="" className="max-w-[131px]" />
+                        <img src={"/assets/nav/logo.png"} alt="" className="max-w-[131px]" />
                     </Link>
                 </div>
                 <div className="hidden lg:flex">
                     <Nav />
                 </div>
                 <div className="hidden lg:flex items-center justify-start gap-4">
-                    <img src={"../../src/assets/nav/notification.png"} alt="" className="size-6 md:size-10 cursor-pointer" />
-                    <img src={"../../src/assets/nav/avatar.png"} alt="" className="size-10 cursor-pointer" />
+                    <img src={"/assets/nav/notification.png"} alt="" className="size-6 md:size-10 cursor-pointer" />
+                    <img src={"/assets/nav/avatar.png"} alt="" className="size-10 cursor-pointer" />
                     <div>
                         <h4 className="font-semibold text-base text-body">Usman Zafar</h4>
                         <p className="text-body text-sm">usmanzafar@gmail.com</p>
@@ -35,7 +35,7 @@ const Header = () => {
                 <button onClick={toggleMenu}
                     className="flex lg:hidden bg-body rounded-md focus:outline-none"
                     aria-label={"Toggle Menu"}>
-                    <img src={isOpen ? "../../src/assets/nav/close.svg" : "../../src/assets/nav/menu.svg"} alt="toggle" className="size-10" />
+                    <img src={isOpen ? "/assets/nav/close.svg" : "/assets/nav/menu.svg"} alt="toggle" className="size-10" />
                 </button>
             </div>
             {isOpen && <MobileNav toggleMenu={toggleMenu} />}

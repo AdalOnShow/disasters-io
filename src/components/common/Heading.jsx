@@ -9,8 +9,8 @@ const Heading = ({ children, upTitle, title, cross }) => {
                     <div className="flex justify-center items-center gap-4">
                         {cross &&
                             <NavLink to={"/incidents/new-incident"}>
-                                <div className="flex items-center justify-center rounded-full size-[41px] bg-white p-[10px] cursor-pointer hover:drop-shadow-2xl transition-all">
-                                    <img src={"../../src/assets/cross.png"} alt="cross" />
+                                <div className="flex items-center justify-center rounded-full size-[41px] bg-white p-[10px] cursor-pointer hover:drop-shadow-2xl hover:scale-105 transition-all">
+                                    <img src={"/assets/cross.png"} alt="cross" />
                                 </div>
                             </NavLink>
                         }

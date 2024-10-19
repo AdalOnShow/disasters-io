@@ -21,7 +21,7 @@ const Locations = () => {
                     <div className="flex flex-col justify-center items-start">
                         <div className="flex items-center justify-center gap-[15px]">
                             <div className="flex justify-center items-center p-[9px] bg-[#F4F4F5] rounded-full">
-                                <img src="../../src/assets/location/location.svg" alt="location" />
+                                <img src="/assets/location/location.svg" alt="location" />
                             </div>
                             <div>
                                 <p className="text-sm text-[#6B7280]">Location</p>
@@ -30,7 +30,7 @@ const Locations = () => {
                         </div>
                         <div className="flex items-center justify-center gap-[15px] pt-[45px]">
                             <div className="flex justify-center items-center p-[9px] bg-[#F4F4F5] rounded-full">
-                                <img src="../../src/assets/location/mony.svg" alt="location" />
+                                <img src="/assets/location/mony.svg" alt="location" />
                             </div>
                             <div>
                                 <p className="text-sm text-[#6B7280]">Approx. Cost:</p>
@@ -61,13 +61,13 @@ const Locations = () => {
                                 className="grid grid-cols-3 gap-8 md:gap-4 ">
                                 {
                                     locationCards.map(({ image, title, des, price }, i) => (
-                                        <div key={i} className="max-w-[306px]">
+                                        <div key={i} className="max-w-[306px] hover:scale-105 transition-all">
                                             <div className="max-h-[214px] relative">
                                                 <img src={image} alt="card image"
                                                     className="w-full h-full object-cover" />
                                                 <div
                                                     className="absolute top-2 right-2 flex items-center justify-center gap-2 font-bold text-xs text-[#18181B] bg-white p-2.5 rounded-[40px]">
-                                                    <img src={"../src/assets/location/building.svg"} alt="" />
+                                                    <img src={"/assets/location/building.svg"} alt="" />
                                                     Building
                                                 </div>
                                             </div>
@@ -112,7 +112,7 @@ const Locations = () => {
 
                 <div className="max-w-[526px] order-1 lg:order-2">
                     <p className="text-sm text-body">Incident Map</p>
-                    <img src="../../src/assets/location/map.png" alt="map" className="my-5" />
+                    <img src="/assets/location/map.png" alt="map" className="my-5" />
                     <p className="text-sm text-body">Start 19.1232, -118.233 End 19.3245, -119.2323 </p>
                 </div>
 

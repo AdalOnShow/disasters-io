@@ -19,8 +19,8 @@ const Dashboard = () => {
             <div className="fixed bottom-16 right-16">
                 <button
                     onClick={toggleBox}
-                    className={`${isChatBoxOpen ? "bg-white" : "bg-primary"} md:size-16 xl:size-[77px] flex items-center justify-center rounded-full text-4xl md:text-[45px] xl:text-[55px] drop-shadow-2xl`}>
-                    <img src={isChatBoxOpen ? "../src/assets/dashboard/cross.png" : "../src/assets/dashboard/c.png"} alt="" />
+                    className={`${isChatBoxOpen ? "bg-white" : "bg-primary"} size-14 md:size-16 xl:size-[77px] flex items-center justify-center rounded-full text-2xl sm:text-4xl md:text-[45px] xl:text-[55px] drop-shadow-2xl focus:outline-none`}>
+                    <img src={isChatBoxOpen ? "/assets/cross.png" : "/assets/dashboard/c.png"} alt="" />
                 </button>
             </div>
             {

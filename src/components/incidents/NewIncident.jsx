@@ -26,7 +26,7 @@ const NewIncident = () => {
 
                                 <div className="pt-2 sm:pt-4 md:pt-8 lg:pt-[68px]">
                                     <h4 className="font-bold text-sm sm:text-lg
-                                     lg:text-[20px] text-black">{title}</h4>
+                                    lg:text-[20px] text-black">{title}</h4>
                                     <p className="text-xs sm:text-sm text-body pt-3 md:pt-5">{des}</p>
                                 </div>
                             </div>

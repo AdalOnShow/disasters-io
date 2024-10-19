@@ -3,6 +3,7 @@ import { bestDescribes } from "../../lib/data/index.js";
 import { useState } from "react";
 
 const Step1 = () => {
+    // eslint-disable-next-line no-unused-vars
     const [selected, setSelected] = useState(false)
 
     return (
@@ -18,7 +19,6 @@ const Step1 = () => {
                     {
                         bestDescribes.map(({ img, text }, i) => (
                             <button
-                                onClick={(i) => { setSelected((prev) => !prev) }}
                                 key={i}
                                 className={`flex justify-start items-center gap-[7.5px] bg-[#F4F4F5] hover:bg-secondary border border-secondary px-5 py-[22px] rounded-md transition-colors hover:scale-105 ${selected && "bg-primary"}`}>
                                 <img src={img} alt={text} />
