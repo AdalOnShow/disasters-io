@@ -58,7 +58,7 @@ const Locations = () => {
                         </div>
                         <div className="container mx-auto max-w-[1300px] pt-[15px]">
                             <div
-                                className="grid grid-cols-3 gap-8 md:gap-4 ">
+                                className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 ">
                                 {
                                     locationCards.map(({ image, title, des, price }, i) => (
                                         <div key={i} className="max-w-[306px] hover:scale-105 transition-all">
@@ -66,7 +66,7 @@ const Locations = () => {
                                                 <img src={image} alt="card image"
                                                     className="w-full h-full object-cover" />
                                                 <div
-                                                    className="absolute top-2 right-2 flex items-center justify-center gap-2 font-bold text-xs text-[#18181B] bg-white p-2.5 rounded-[40px]">
+                                                    className="absolute top-2 right-2 flex items-center justify-center gap-1 md:gap-2 font-bold text-xs text-[#18181B] bg-white p-1 md:p-2.5 rounded-[40px]">
                                                     <img src={"/assets/location/building.svg"} alt="" />
                                                     Building
                                                 </div>

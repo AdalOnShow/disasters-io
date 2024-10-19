@@ -1,10 +1,10 @@
 import IncidentsHeading from "./IncidentsHeading.jsx";
 import { bestDescribes } from "../../lib/data/index.js";
 import { useState } from "react";
+import Item from "./Item.jsx";
 
 const Step1 = () => {
-    // eslint-disable-next-line no-unused-vars
-    const [selected, setSelected] = useState(false)
+    const [selected, setSelected] = useState()
 
     return (
         <section>
@@ -17,13 +17,8 @@ const Step1 = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-[11px] pt-[25px]">
                     {
-                        bestDescribes.map(({ img, text }, i) => (
-                            <button
-                                key={i}
-                                className={`flex justify-start items-center gap-[7.5px] bg-[#F4F4F5] hover:bg-secondary border border-secondary px-5 py-[22px] rounded-md transition-colors hover:scale-105 ${selected && "bg-primary"}`}>
-                                <img src={img} alt={text} />
-                                <p className={`text-sm text-body ${selected && "text-white"}`}>{text}</p>
-                            </button>
+                        bestDescribes.map((item, i) => (
+                            <Item key={i} {...item} onClick={() => setSelected(i)} isSelected={selected === i} />
                         ))
                     }
                 </div>
