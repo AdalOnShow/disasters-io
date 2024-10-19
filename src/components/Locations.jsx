@@ -1,7 +1,6 @@
 import Heading from "./common/Heading.jsx";
-import HeadingButtons from "./common/HeadingButtons.jsx";
 import { NavLink } from "react-router-dom";
-import { Button1 } from "./common/Buttons.jsx";
+import { Button1, Button2 } from "./common/Buttons.jsx";
 import { locationCards } from "../lib/data/index.js";
 import SmCard from "./common/SmCard.jsx";
 
@@ -9,14 +8,25 @@ const Locations = () => {
     return (
         <section>
             <Heading upTitle="Home - Incidents" title="Incidents">
-                <HeadingButtons >
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-4 sm:pt-0">
+                    <div className="relative rounded-[6px] bg-[#FAFAFA]">
+                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <img src={"/assets/search.svg"} alt="search" width={18} height={18} />
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Search incident"
+                            className="w-36 md:w-[190px] rounded-md border-0 py-[13px] md:py-[11.8px] pl-8 text-body ring-1 ring-secondary placeholder:text-body focus:ring-2 focus:ring-primary text-xs md:text-sm md:leading-6"
+                        />
+                    </div>
+                    <Button2>Sort By: Date modified</Button2>
                     <NavLink to={"/incidents/new-incident"}>
                         <Button1 icon element={"New Incident"} />
                     </NavLink>
-                </HeadingButtons>
+                </div>
             </Heading>
 
-            <div className="container mx-auto max-w-[700px] lg:max-w-[1308px] pt-10 px-4 flex flex-col lg:flex-row items-start justify-center gap-[94px]">
+            <div className="container mx-auto max-w-[700px] lg:max-w-[1308px] pt-10 px-4 flex flex-col lg:flex-row items-start justify-center gap-0 sm:gap-10 md:gap-[94px]">
                 <div className="max-w-[680px] order-2 lg:order-1">
                     <div className="flex flex-col justify-center items-start">
                         <div className="flex items-center justify-center gap-[15px]">
@@ -110,7 +120,7 @@ const Locations = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[526px] order-1 lg:order-2">
+                <div className="max-w-[526px] mx-auto order-1 lg:order-2 px-8 md:px-0">
                     <p className="text-sm text-body">Incident Map</p>
                     <img src="/assets/location/map.png" alt="map" className="my-5" />
                     <p className="text-sm text-body">Start 19.1232, -118.233 End 19.3245, -119.2323 </p>
